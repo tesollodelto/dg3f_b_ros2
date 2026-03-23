@@ -4,6 +4,8 @@
 ![ROS 2 Humble](https://img.shields.io/badge/ROS_2-Humble-blue?logo=ros)
 ![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2-Jazzy-blue?logo=ros)
 
+> **Note:** This model has been discontinued. This repository is kept for reference.
+
 ROS 2 packages for the **Delto Gripper DG3F-B** (3-finger, basic type).
 
 ## Packages
