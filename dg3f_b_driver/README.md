@@ -1,5 +1,7 @@
 # dg3f_b_driver ROS 2 Package 🚀
 
+> **Note:** The DG-3F-B model has been discontinued. This package is provided for legacy support only.
+
 ## 📌 Overview
 
 The `dg3f_b_driver` ROS 2 package provides a hardware interface leveraging [ros2_control](https://control.ros.org/) for the DG-3F-B grippers (12 DOF, 3 fingers × 4 joints), enabling direct robotic control operations.
@@ -13,13 +15,13 @@ cd ~/your_ws
 
 ### Update rosdep
 ```bash
-apt update
+sudo apt update
 rosdep update
 ```
 
 ### Install Specific Dependencies
 ```bash
-rosdep install --from-paths src/DELTO_M_ROS2/dg3f_b_driver --ignore-src -r -y
+rosdep install --from-paths src/tesollo_ros2/dg3f_b_ros2/dg3f_b_driver --ignore-src -r -y
 ```
 
 ### Verify Installation by Building
