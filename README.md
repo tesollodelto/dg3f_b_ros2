@@ -14,6 +14,7 @@ ROS 2 packages for the **Delto Gripper DG3F-B** (3-finger, basic type).
 |---|---|
 | `dg3f_b_description` | URDF/xacro model, meshes, and RViz display launch |
 | `dg3f_b_driver` | ros2_control hardware driver and controller launch files |
+| `dg3f_b_moveit_config` | MoveIt 2 configuration (SRDF, planners, mock hardware) |
 
 ## Dependencies
 
@@ -32,7 +33,7 @@ git clone https://github.com/tesollodelto/dg_tcp_comm.git
 
 ```bash
 cd ~/ros2_ws
-colcon build --packages-select dg3f_b_description dg3f_b_driver
+colcon build --packages-select dg3f_b_description dg3f_b_driver dg3f_b_moveit_config
 source install/setup.bash
 ```
 
@@ -41,4 +42,13 @@ source install/setup.bash
 ```bash
 # Hardware driver
 ros2 launch dg3f_b_driver dg3f_b_driver.launch.py
+
+# Mock hardware (no device required)
+ros2 launch dg3f_b_driver dg3f_b_mock.launch.py
+
+# MoveIt (mock hardware, default)
+ros2 launch dg3f_b_moveit_config dg3f_b_moveit.launch.py
+
+# MoveIt (real hardware)
+ros2 launch dg3f_b_moveit_config dg3f_b_moveit.launch.py use_mock:=false delto_ip:=169.254.186.72
 ```
