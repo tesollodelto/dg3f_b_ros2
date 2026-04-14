@@ -141,7 +141,7 @@ Visualization Manager:
           Show Trail: false
           Value: true
         Link Tree Style: Links in Alphabetic Order
-        delto_base_link:
+        l_dg_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -157,7 +157,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: delto_base_link
+    Fixed Frame: l_dg_base
     Frame Rate: 30
   Name: root
   Tools:
