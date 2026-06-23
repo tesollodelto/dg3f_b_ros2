@@ -52,12 +52,17 @@ ros2 launch dg3f_b_driver dg3f_b_driver.launch.py delto_ip:=169.254.186.72 delto
 
 | Script | Controller Type | Description |
 |--------|-----------------|-------------|
-| `dg3f_b_jtc_test.py` | JTC | JointTrajectory based test |
+| `dg3f_b_jtc_test.py` | JTC (topic) | JointTrajectory topic based test |
+| `dg3f_b_jtc_action_test.py` | JTC (action) | FollowJointTrajectory action based test |
 | `dg3f_b_operator_test.py` | Operator | Operator mode test |
 
 **Python Example:**
 ```bash
+# Topic based (fire-and-forget)
 ros2 run dg3f_b_driver dg3f_b_jtc_test.py
+
+# Action based (sends the whole trajectory as one goal and waits for the result)
+ros2 run dg3f_b_driver dg3f_b_jtc_action_test.py
 ```
 
 **C++ Example:**

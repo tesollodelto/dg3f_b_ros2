@@ -23,6 +23,7 @@ ament_target_dependencies(dg3f_b_test_cpp rclcpp trajectory_msgs)
 install(
   PROGRAMS
   script/dg3f_b_jtc_test.py
+  script/dg3f_b_jtc_action_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
