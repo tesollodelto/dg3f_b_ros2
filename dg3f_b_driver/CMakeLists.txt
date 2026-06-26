@@ -24,6 +24,8 @@ install(
   PROGRAMS
   script/dg3f_b_jtc_test.py
   script/dg3f_b_jtc_action_test.py
+  script/dg3f_b_pid_test.py
+  script/dg3f_b_pid_all_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
